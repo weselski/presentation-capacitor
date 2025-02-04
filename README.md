@@ -10,10 +10,11 @@ This Capacitor plugin provides seamless integration with the Presentation API, e
 
 ## Install
 
-| Capacitor Version |Presentation Version|
-| ------------- | ----------------------------------------------------------- |
-| Capacitor v4  |  0.0.5|
-| Capacitor v6  |  0.1.x|
+| Capacitor Version | Presentation Version |
+|-------------------|----------------------|
+| Capacitor v4      | 0.0.5                |
+| Capacitor v6      | 0.1.x                |
+| Capacitor v7      | 0.2.x                |
 
 
 ```bash
