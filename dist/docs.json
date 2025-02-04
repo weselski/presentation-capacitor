@@ -1,0 +1,167 @@
+{
+  "api": {
+    "name": "CapacitorPresentationPlugin",
+    "slug": "capacitorpresentationplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "open",
+        "signature": "(options: OpenOptions) => Promise<OpenResponse>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "OpenOptions"
+          }
+        ],
+        "returns": "Promise<OpenResponse>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "OpenResponse",
+          "OpenOptions"
+        ],
+        "slug": "open"
+      },
+      {
+        "name": "sendMessage",
+        "signature": "<T>(message: T) => Promise<T>",
+        "parameters": [
+          {
+            "name": "message",
+            "docs": "",
+            "type": "T"
+          }
+        ],
+        "returns": "Promise<T>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "T"
+        ],
+        "slug": "sendmessage"
+      },
+      {
+        "name": "terminate",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "terminate"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'onSuccessLoadUrl', listenerFunc: (data: any) => void) => any",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "",
+            "type": "'onSuccessLoadUrl'"
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "<br>\n\nWorks only if type html of url or if browser",
+            "type": "(data: any) => void"
+          }
+        ],
+        "returns": "any",
+        "tags": [
+          {
+            "name": "param",
+            "text": "eventName"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc <br>\n\nWorks only if type html of url or if browser"
+          }
+        ],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "addlisteneronsuccessloadurl-"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'onFailLoadUrl', listenerFunc: (data: any) => void) => any",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "",
+            "type": "'onFailLoadUrl'"
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(data: any) => void"
+          }
+        ],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "addlisteneronfailloadurl-"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'onMessage', listenerFunc: (data: any) => void) => any",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "",
+            "type": "'onMessage'"
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(data: any) => void"
+          }
+        ],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "addlisteneronmessage-"
+      },
+      {
+        "name": "getDisplays",
+        "signature": "() => Promise<{ displays: number; }>",
+        "parameters": [],
+        "returns": "Promise<{ displays: number; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "getdisplays"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [
+    {
+      "name": "OpenResponse",
+      "slug": "openresponse",
+      "docs": "",
+      "types": [
+        {
+          "text": "{ success?: any; error?: any; result?: any }",
+          "complexTypes": []
+        }
+      ]
+    },
+    {
+      "name": "OpenOptions",
+      "slug": "openoptions",
+      "docs": "",
+      "types": [
+        {
+          "text": "{} & (\n  | {\n      type: 'url';\n      url: string;\n    }\n  | {\n      type: 'video';\n      videoOptions: {\n        videoUrl: string;\n        showControls?: boolean;\n      };\n    }\n  | {\n      type: 'html';\n      html: string;\n    }\n)",
+          "complexTypes": []
+        }
+      ]
+    }
+  ],
+  "pluginConfigs": []
+}
