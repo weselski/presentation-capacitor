@@ -2,14 +2,13 @@
   "name": "presentation-capacitor",
   "version": "0.2.0",
   "description": "Capacitor Plugin for presentation api",
-  "main": "dist/plugin.cjs.js",
+  "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "exports": {
-    ".": {
-      "import": "./dist/esm/index.js",
-      "require": "./dist/plugin.cjs.js"
-    }
+    "import": "./dist/esm/index.js",
+    "require": "./dist/plugin.cjs.js",
+    "types": "./dist/esm/index.d.ts"
   },
   "unpkg": "dist/plugin.js",
   "files": [
